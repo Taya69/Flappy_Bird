@@ -28,7 +28,7 @@ function moveUp (){
 }
 var xPos = 10;
 var yPos = 150;
-var grav = 1.2;
+var grav = 1.5;
 var pipe = [];
 pipe[0] = {
   x: canvas.width,
@@ -53,7 +53,7 @@ function draw() {
  yPos + bird.height >= canvas.height - fg.height){
    location.reload();
  }
- if (pipe[i].x == 6){
+ if (pipe[i].x == 5){
    score++;
    score_.play();
  }
